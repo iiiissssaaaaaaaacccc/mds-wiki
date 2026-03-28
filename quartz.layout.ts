@@ -41,7 +41,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer({
       filterFn: (node) => {
         const omit = new Set(["lore"])
-        return !omit.has(node.name.toLowerCase())
+        return !node.name || !omit.has(node.name.toLowerCase())
       },
     }),
   ],
@@ -70,7 +70,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.Explorer({
       filterFn: (node) => {
         const omit = new Set(["lore"])
-        return !omit.has(node.name.toLowerCase())
+        return !node.name || !omit.has(node.name.toLowerCase())
       },
     }),
   ],
