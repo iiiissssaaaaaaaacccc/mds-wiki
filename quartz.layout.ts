@@ -39,7 +39,10 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-      filterFn: (node) => !["Lore"].includes(node.name),
+      filterFn: (node) => {
+        const omit = new Set(["lore"])
+        return !omit.has(node.name.toLowerCase())
+      },
     }),
   ],
   right: [
@@ -65,7 +68,10 @@ export const defaultListPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-      filterFn: (node) => !["Lore"].includes(node.name),
+      filterFn: (node) => {
+        const omit = new Set(["lore"])
+        return !omit.has(node.name.toLowerCase())
+      },
     }),
   ],
   right: [],
