@@ -1,1 +1,1 @@
-Marijuana Deathsquads is a music collective formed in Minneapolis in 2009.
+Marijuana Deathsquads is a music collective founded in Minneapolis in 2009. 
